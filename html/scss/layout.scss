@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+html {
+    font-family: "Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",Meiryo,sans-serif;
+    line-height: 1.6;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-size: 14px;
+    font-feature-settings: "palt";
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    background-color: #d3e9e9;
+    * {
+        box-sizing: inherit;
+    }
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-image: linear-gradient(to right, #20b2aa, #2f4f4f);
+    color: #fff;
+    h1 {
+        margin: 0 10px 0 0;
+    }
+    nav {
+        ul {
+            display: flex;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            li {
+                margin: 0 10px;
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+    text-align: center;
+}
