@@ -10,11 +10,18 @@ html {
 }
 
 body {
-    box-sizing: border-box;
     margin: 0;
     background-color: #d3e9e9;
+    visibility: hidden;
+    opacity: 0;
+    box-sizing: border-box;
+    transition: visibility 1s, opacity 1s;
     * {
         box-sizing: inherit;
+    }
+    &.show {
+        visibility: visible;
+        opacity: 1;
     }
 }
 

@@ -9,15 +9,24 @@ html {
 }
 
 body {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   margin: 0;
   background-color: #d3e9e9;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: visibility 1s, opacity 1s;
+  transition: visibility 1s, opacity 1s;
 }
 
 body * {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+}
+
+body.show {
+  visibility: visible;
+  opacity: 1;
 }
 
 header {
